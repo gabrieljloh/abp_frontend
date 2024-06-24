@@ -11,8 +11,8 @@ const Dashboard = () => {
   return (
     <div>
     <div className='flex flex-col items-center py-12 text-3xl'>
-        <p className='mb-4 font-bold text-cyan-900'>Bem-vindo, {name}!</p>
-        <div className='max-w-screen-sm font-semibold py-2 text-lg'>
+        <p className='mb-4 font-bold text-cyan-700'>Bem-vindo, {name}!</p>
+        <div className='max-w-screen-sm font-semibold py-2 text-lg text-white'>
             <p>Este é o SOS, Sistema Online de Saneamento, pronto para te socorrer na organização dos serviços de manutenção e abastecimento.</p>
             <br/> 
             <p>No GIS, Gerenciamento Interno de Serviços, você poderá incluir todas as características da sua cidade, adicionando bairros, ruas, CEPs, entre outros.</p>
@@ -23,11 +23,11 @@ const Dashboard = () => {
         </div>
     </div>
     <div className='flex justify-center gap-4'>
-        <button className='border border-radius border-black bg-white hover:bg-cyan-800 rounded py-4 px-10 font-bold' 
+        <button className='border border-radius border-black bg-black hover:bg-cyan-800 rounded py-4 px-10 font-bold' 
             name="GIS" onClick={() => navigate("/gis")}>
             GIS
           </button>
-          <button className='border border-radius border-black bg-white hover:bg-cyan-800 rounded py-4 px-10 font-bold' 
+          <button className='border border-radius border-black bg-black hover:bg-cyan-800 rounded py-4 px-10 font-bold' 
             name="GIF" onClick={() => navigate("/gif")}>
             GIF
           </button>
